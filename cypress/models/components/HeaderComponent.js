@@ -13,10 +13,11 @@ export default class HeaderComponent{
                     text:$item.text(),
                     href:$item.attr("href")
                 })
-            }
+            } 
+        })
             return new Cypress.Promise(resolve=>{
                 cy.wrap('').then(()=> resolve(menuDetails))
-            })
+           
         })
     }
 }
