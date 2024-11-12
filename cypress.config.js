@@ -8,6 +8,7 @@ module.exports = defineConfig({
     },
     projectId:"sdetpro",
     specPattern:"./cypress/tests/*/*",
+    reporter:"mochawesome",
     baseUrl:"https://www.demoblaze.com/"
   },
   defaultCommandTimeout:10000

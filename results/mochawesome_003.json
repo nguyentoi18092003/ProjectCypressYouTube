@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-12T04:21:18.801Z",
+    "end": "2024-11-12T04:21:22.935Z",
+    "duration": 4134,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8ba8647e-230f-4556-a6bd-d4b260dcfa91",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\HomePageCategoryTest.js",
+      "file": "cypress\\tests\\components\\HomePageCategoryTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b86682a8-ac8e-49b5-be92-f16d671de947",
+          "title": "HomePage category Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to filter phone products",
+              "fullTitle": "HomePage category Test should be able to filter phone products",
+              "timedOut": null,
+              "duration": 1832,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "4e2d8f06-8a30-46c5-badf-412d28d7b2ba",
+              "parentUUID": "b86682a8-ac8e-49b5-be92-f16d671de947",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to filter notebook products",
+              "fullTitle": "HomePage category Test should be able to filter notebook products",
+              "timedOut": null,
+              "duration": 1113,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "8a5d5c19-1367-47e0-92ad-8c4f047c6522",
+              "parentUUID": "b86682a8-ac8e-49b5-be92-f16d671de947",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to filter monitor products",
+              "fullTitle": "HomePage category Test should be able to filter monitor products",
+              "timedOut": null,
+              "duration": 1124,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "d6a8f638-502a-4ae3-aca2-51a8dd02cf31",
+              "parentUUID": "b86682a8-ac8e-49b5-be92-f16d671de947",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4e2d8f06-8a30-46c5-badf-412d28d7b2ba",
+            "8a5d5c19-1367-47e0-92ad-8c4f047c6522",
+            "d6a8f638-502a-4ae3-aca2-51a8dd02cf31"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4069,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

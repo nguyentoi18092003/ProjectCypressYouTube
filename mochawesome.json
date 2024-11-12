@@ -1,0 +1,432 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-11-12T04:21:06.000Z",
+    "end": "2024-11-12T04:21:26.410Z",
+    "duration": 20410
+  },
+  "results": [
+    {
+      "uuid": "75c4cba7-b214-4d97-83b7-21b427ee7533",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\FooterTest.js",
+      "file": "cypress\\tests\\components\\FooterTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "594546b2-2050-4ceb-b677-1508c215d470",
+          "title": "Footer Component Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test for brand logo",
+              "fullTitle": "Footer Component Test Test for brand logo",
+              "timedOut": null,
+              "duration": 1278,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let expectedDataUs = {};\ncy.fixture('getAboutUsdata').then(data => {\n  expectedDataUs = data;\n});\nfooterComp.getAboutUsdata().then(actualAboutUsData => {\n  cy.log(cy.log(JSON.stringify(actualAboutUsData)));\n  cy.wrap('').then(() => {\n    // expect (actualAboutUsData.header).to.equal(expectedDataUs.header);\n    // expect (actualAboutUsData.desc).to.equal(expectedDataUs.desc);\n    expect(actualAboutUsData).to.eql(expectedDataUs);\n  });\n});",
+              "err": {},
+              "uuid": "2b63529f-5240-42d2-946d-db6037d4d4b6",
+              "parentUUID": "594546b2-2050-4ceb-b677-1508c215d470",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b63529f-5240-42d2-946d-db6037d4d4b6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1278,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1dfadc5f-d0eb-4761-a062-36911ac74459",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\HeaderTest.js",
+      "file": "cypress\\tests\\components\\HeaderTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "42f5f0b3-c966-4c0f-b7df-de0c62b417b4",
+          "title": "Header Component Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test for branch logo",
+              "fullTitle": "Header Component Test Test for branch logo",
+              "timedOut": null,
+              "duration": 1193,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "headerComp.brandLogoImg().should('be.visible');\nheaderComp.brandLogo().should('contain.text', BRAND_TEX);",
+              "err": {},
+              "uuid": "c12b00a8-3d2e-4bfa-b243-53b47c3bd4a4",
+              "parentUUID": "42f5f0b3-c966-4c0f-b7df-de0c62b417b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test for header menu",
+              "fullTitle": "Header Component Test Test for header menu",
+              "timedOut": null,
+              "duration": 150,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Test nay dang chua tim thay phan tu k hieu kieu gi nua\n// cy.visit('/');\nlet expectedMenuDetails = [];\n//cy.log(JSON.stringify(menuDetailData))\ncy.fixture('menuDetails').then(data => {\n  expectedMenuDetails = data;\n});\nheaderComp.getMenuDetails().then(actualMenuDetail => {\n  cy.wrap('').then(() => {\n    expect(actualMenuDetail).to.be.deep.eq(expectedMenuDetails);\n    cy.log(JSON.stringify(actualMenuDetail));\n    cy.log(JSON.stringify(expectedMenuDetails));\n  });\n});",
+              "err": {},
+              "uuid": "f4f36810-62ca-4e6e-8b32-04be09bc5c4b",
+              "parentUUID": "42f5f0b3-c966-4c0f-b7df-de0c62b417b4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c12b00a8-3d2e-4bfa-b243-53b47c3bd4a4",
+            "f4f36810-62ca-4e6e-8b32-04be09bc5c4b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1343,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8ba8647e-230f-4556-a6bd-d4b260dcfa91",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\HomePageCategoryTest.js",
+      "file": "cypress\\tests\\components\\HomePageCategoryTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b86682a8-ac8e-49b5-be92-f16d671de947",
+          "title": "HomePage category Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to filter phone products",
+              "fullTitle": "HomePage category Test should be able to filter phone products",
+              "timedOut": null,
+              "duration": 1832,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "4e2d8f06-8a30-46c5-badf-412d28d7b2ba",
+              "parentUUID": "b86682a8-ac8e-49b5-be92-f16d671de947",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to filter notebook products",
+              "fullTitle": "HomePage category Test should be able to filter notebook products",
+              "timedOut": null,
+              "duration": 1113,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "8a5d5c19-1367-47e0-92ad-8c4f047c6522",
+              "parentUUID": "b86682a8-ac8e-49b5-be92-f16d671de947",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to filter monitor products",
+              "fullTitle": "HomePage category Test should be able to filter monitor products",
+              "timedOut": null,
+              "duration": 1124,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "d6a8f638-502a-4ae3-aca2-51a8dd02cf31",
+              "parentUUID": "b86682a8-ac8e-49b5-be92-f16d671de947",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4e2d8f06-8a30-46c5-badf-412d28d7b2ba",
+            "8a5d5c19-1367-47e0-92ad-8c4f047c6522",
+            "d6a8f638-502a-4ae3-aca2-51a8dd02cf31"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4069,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "62db7056-4548-44ef-8b16-4b68482a796c",
+      "title": "",
+      "fullFile": "cypress\\tests\\signup\\SignUpTest.js",
+      "file": "cypress\\tests\\signup\\SignUpTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fb6542dc-772a-4a27-a32f-a54e162024ce",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to login with correct creds",
+              "fullTitle": "Login Test should be able to login with correct creds",
+              "timedOut": null,
+              "duration": 2032,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "headerComp.getSignUpLink().click({\n  force: true\n});\ncy.get('.modal-dialog form').should('be.visible');\ncy.get('#sign-username').type(`${SIGN_UP_CRED.username}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#sign-password').type(`${SIGN_UP_CRED.password}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"register()\"]').click({\n  force: true\n});\n//verify alert giong ben login....\n// cy.on('window: alert',alert=>{\n//     expect(alert).to.contains(\"User does not exits.\")\n// })",
+              "err": {},
+              "uuid": "16efc516-e959-4151-a946-5aae934311fe",
+              "parentUUID": "fb6542dc-772a-4a27-a32f-a54e162024ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16efc516-e959-4151-a946-5aae934311fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2032,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "393bd331-bf24-463f-bfb9-a034dd8894ec",
+      "title": "",
+      "fullFile": "cypress\\tests\\authen\\LoginTest.js",
+      "file": "cypress\\tests\\authen\\LoginTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be able to login with correct creds",
+              "fullTitle": "Login Test should be able to login with correct creds",
+              "timedOut": null,
+              "duration": 3906,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "headerComp.loginLink().click({\n  force: true\n});\ncy.get('#logInModal form').should('be.visible');\ncy.get('#loginusername').type(`${LOGIN_CRED.username}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#loginpassword').type(`${LOGIN_CRED.password}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"logIn()\"]').click({\n  force: true\n});\ncy.get('#nameofuser').should('be.visible');\ncy.get('#nameofuser').should('contain.text', `Welcome ${LOGIN_CRED.username}`);\ncy.on('window: alert', () => {\n  expect(alert).to.contains(\"User does not exits.\");\n});",
+              "err": {},
+              "uuid": "36dcc3ab-b741-45eb-9f14-9d3f0bf461cb",
+              "parentUUID": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see wrong username",
+              "fullTitle": "Login Test should be able to see wrong username",
+              "timedOut": null,
+              "duration": 940,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "headerComp.loginLink().click({\n  force: true\n});\ncy.get('#logInModal form').should('be.visible');\ncy.get('#loginusername').type(`${LOGIN_CRED.username}_WRONG`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#loginpassword').type(`${LOGIN_CRED.password}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"logIn()\"]').click({\n  force: true\n});\ncy.on('window: alert', alert => {\n  expect(alert).to.contains(\"User does not exits.\");\n});",
+              "err": {},
+              "uuid": "5abf2bb3-31e8-41b9-b881-1c8c994c0d3f",
+              "parentUUID": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see wrong password",
+              "fullTitle": "Login Test should be able to see wrong password",
+              "timedOut": null,
+              "duration": 940,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "headerComp.loginLink().click({\n  force: true\n});\ncy.get('#logInModal form').should('be.visible');\ncy.get('#loginusername').type(`${LOGIN_CRED.username}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#loginpassword').type(`${LOGIN_CRED.password}_WRONG`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"logIn()\"]').click({\n  force: true\n});\ncy.on('window: alert', alert => {\n  expect(alert).to.contains(\"User does not exits.\");\n});",
+              "err": {},
+              "uuid": "76a48081-8987-4a82-bcff-1bfea7680119",
+              "parentUUID": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "36dcc3ab-b741-45eb-9f14-9d3f0bf461cb",
+            "5abf2bb3-31e8-41b9-b881-1c8c994c0d3f",
+            "76a48081-8987-4a82-bcff-1bfea7680119"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5786,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

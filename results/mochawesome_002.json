@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-12T04:21:16.045Z",
+    "end": "2024-11-12T04:21:17.442Z",
+    "duration": 1397,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1dfadc5f-d0eb-4761-a062-36911ac74459",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\HeaderTest.js",
+      "file": "cypress\\tests\\components\\HeaderTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "42f5f0b3-c966-4c0f-b7df-de0c62b417b4",
+          "title": "Header Component Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test for branch logo",
+              "fullTitle": "Header Component Test Test for branch logo",
+              "timedOut": null,
+              "duration": 1193,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "headerComp.brandLogoImg().should('be.visible');\nheaderComp.brandLogo().should('contain.text', BRAND_TEX);",
+              "err": {},
+              "uuid": "c12b00a8-3d2e-4bfa-b243-53b47c3bd4a4",
+              "parentUUID": "42f5f0b3-c966-4c0f-b7df-de0c62b417b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test for header menu",
+              "fullTitle": "Header Component Test Test for header menu",
+              "timedOut": null,
+              "duration": 150,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Test nay dang chua tim thay phan tu k hieu kieu gi nua\n// cy.visit('/');\nlet expectedMenuDetails = [];\n//cy.log(JSON.stringify(menuDetailData))\ncy.fixture('menuDetails').then(data => {\n  expectedMenuDetails = data;\n});\nheaderComp.getMenuDetails().then(actualMenuDetail => {\n  cy.wrap('').then(() => {\n    expect(actualMenuDetail).to.be.deep.eq(expectedMenuDetails);\n    cy.log(JSON.stringify(actualMenuDetail));\n    cy.log(JSON.stringify(expectedMenuDetails));\n  });\n});",
+              "err": {},
+              "uuid": "f4f36810-62ca-4e6e-8b32-04be09bc5c4b",
+              "parentUUID": "42f5f0b3-c966-4c0f-b7df-de0c62b417b4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c12b00a8-3d2e-4bfa-b243-53b47c3bd4a4",
+            "f4f36810-62ca-4e6e-8b32-04be09bc5c4b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1343,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
