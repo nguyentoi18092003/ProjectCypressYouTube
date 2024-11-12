@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-11-12T04:21:06.000Z",
-    "end": "2024-11-12T04:21:11.891Z",
-    "duration": 5891,
+    "start": "2024-11-12T05:44:56.214Z",
+    "end": "2024-11-12T05:45:01.589Z",
+    "duration": 5375,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "393bd331-bf24-463f-bfb9-a034dd8894ec",
+      "uuid": "024c802c-363b-4605-93c3-8213cba470fc",
       "title": "",
       "fullFile": "cypress\\tests\\authen\\LoginTest.js",
       "file": "cypress\\tests\\authen\\LoginTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+          "uuid": "667cd0db-0a2d-4535-8041-4cd08ae1d774",
           "title": "Login Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should be able to login with correct creds",
               "fullTitle": "Login Test should be able to login with correct creds",
               "timedOut": null,
-              "duration": 3906,
+              "duration": 3470,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "headerComp.loginLink().click({\n  force: true\n});\ncy.get('#logInModal form').should('be.visible');\ncy.get('#loginusername').type(`${LOGIN_CRED.username}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#loginpassword').type(`${LOGIN_CRED.password}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"logIn()\"]').click({\n  force: true\n});\ncy.get('#nameofuser').should('be.visible');\ncy.get('#nameofuser').should('contain.text', `Welcome ${LOGIN_CRED.username}`);\ncy.on('window: alert', () => {\n  expect(alert).to.contains(\"User does not exits.\");\n});",
               "err": {},
-              "uuid": "36dcc3ab-b741-45eb-9f14-9d3f0bf461cb",
-              "parentUUID": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+              "uuid": "d4c51e1f-c160-4f2a-bd3d-6b429ba900bc",
+              "parentUUID": "667cd0db-0a2d-4535-8041-4cd08ae1d774",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should be able to see wrong username",
               "fullTitle": "Login Test should be able to see wrong username",
               "timedOut": null,
-              "duration": 940,
+              "duration": 818,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "headerComp.loginLink().click({\n  force: true\n});\ncy.get('#logInModal form').should('be.visible');\ncy.get('#loginusername').type(`${LOGIN_CRED.username}_WRONG`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#loginpassword').type(`${LOGIN_CRED.password}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"logIn()\"]').click({\n  force: true\n});\ncy.on('window: alert', alert => {\n  expect(alert).to.contains(\"User does not exits.\");\n});",
               "err": {},
-              "uuid": "5abf2bb3-31e8-41b9-b881-1c8c994c0d3f",
-              "parentUUID": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+              "uuid": "30c0d71e-942a-4142-9469-73a6db36fff7",
+              "parentUUID": "667cd0db-0a2d-4535-8041-4cd08ae1d774",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "should be able to see wrong password",
               "fullTitle": "Login Test should be able to see wrong password",
               "timedOut": null,
-              "duration": 940,
+              "duration": 943,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "headerComp.loginLink().click({\n  force: true\n});\ncy.get('#logInModal form').should('be.visible');\ncy.get('#loginusername').type(`${LOGIN_CRED.username}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#loginpassword').type(`${LOGIN_CRED.password}_WRONG`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"logIn()\"]').click({\n  force: true\n});\ncy.on('window: alert', alert => {\n  expect(alert).to.contains(\"User does not exits.\");\n});",
               "err": {},
-              "uuid": "76a48081-8987-4a82-bcff-1bfea7680119",
-              "parentUUID": "7e3a9c23-2541-4d9d-8f9f-c9b98bb756a6",
+              "uuid": "b0b94aef-69d9-4ba5-a9ae-1aaf3637c5dc",
+              "parentUUID": "667cd0db-0a2d-4535-8041-4cd08ae1d774",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "36dcc3ab-b741-45eb-9f14-9d3f0bf461cb",
-            "5abf2bb3-31e8-41b9-b881-1c8c994c0d3f",
-            "76a48081-8987-4a82-bcff-1bfea7680119"
+            "d4c51e1f-c160-4f2a-bd3d-6b429ba900bc",
+            "30c0d71e-942a-4142-9469-73a6db36fff7",
+            "b0b94aef-69d9-4ba5-a9ae-1aaf3637c5dc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5786,
+          "duration": 5231,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

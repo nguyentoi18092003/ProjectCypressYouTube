@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-11-12T04:21:24.341Z",
-    "end": "2024-11-12T04:21:26.410Z",
-    "duration": 2069,
+    "start": "2024-11-12T05:45:17.189Z",
+    "end": "2024-11-12T05:45:19.065Z",
+    "duration": 1876,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "62db7056-4548-44ef-8b16-4b68482a796c",
+      "uuid": "fcbc9f95-d3d1-4baa-b5e3-7232116be9b3",
       "title": "",
       "fullFile": "cypress\\tests\\signup\\SignUpTest.js",
       "file": "cypress\\tests\\signup\\SignUpTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fb6542dc-772a-4a27-a32f-a54e162024ce",
+          "uuid": "b257227f-d175-4c98-936a-b15042610064",
           "title": "Login Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should be able to login with correct creds",
               "fullTitle": "Login Test should be able to login with correct creds",
               "timedOut": null,
-              "duration": 2032,
+              "duration": 1815,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "headerComp.getSignUpLink().click({\n  force: true\n});\ncy.get('.modal-dialog form').should('be.visible');\ncy.get('#sign-username').type(`${SIGN_UP_CRED.username}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('#sign-password').type(`${SIGN_UP_CRED.password}`, {\n  force: true,\n  waitForAnimations: true\n});\ncy.get('[onclick=\"register()\"]').click({\n  force: true\n});\n//verify alert giong ben login....\n// cy.on('window: alert',alert=>{\n//     expect(alert).to.contains(\"User does not exits.\")\n// })",
               "err": {},
-              "uuid": "16efc516-e959-4151-a946-5aae934311fe",
-              "parentUUID": "fb6542dc-772a-4a27-a32f-a54e162024ce",
+              "uuid": "db523e24-43a8-44d8-b7a9-9a974067a591",
+              "parentUUID": "b257227f-d175-4c98-936a-b15042610064",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "16efc516-e959-4151-a946-5aae934311fe"
+            "db523e24-43a8-44d8-b7a9-9a974067a591"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2032,
+          "duration": 1815,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

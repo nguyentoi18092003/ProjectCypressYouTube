@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-11-12T04:21:13.374Z",
-    "end": "2024-11-12T04:21:14.692Z",
-    "duration": 1318,
+    "start": "2024-11-12T05:45:03.135Z",
+    "end": "2024-11-12T05:45:04.532Z",
+    "duration": 1397,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "75c4cba7-b214-4d97-83b7-21b427ee7533",
+      "uuid": "a0442d98-f31a-4dce-9b59-7393d53c89a0",
       "title": "",
       "fullFile": "cypress\\tests\\components\\FooterTest.js",
       "file": "cypress\\tests\\components\\FooterTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "594546b2-2050-4ceb-b677-1508c215d470",
+          "uuid": "4781ef7f-3a70-4b9b-acd6-eb49a6bfe937",
           "title": "Footer Component Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Test for brand logo",
               "fullTitle": "Footer Component Test Test for brand logo",
               "timedOut": null,
-              "duration": 1278,
+              "duration": 1323,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "let expectedDataUs = {};\ncy.fixture('getAboutUsdata').then(data => {\n  expectedDataUs = data;\n});\nfooterComp.getAboutUsdata().then(actualAboutUsData => {\n  cy.log(cy.log(JSON.stringify(actualAboutUsData)));\n  cy.wrap('').then(() => {\n    // expect (actualAboutUsData.header).to.equal(expectedDataUs.header);\n    // expect (actualAboutUsData.desc).to.equal(expectedDataUs.desc);\n    expect(actualAboutUsData).to.eql(expectedDataUs);\n  });\n});",
               "err": {},
-              "uuid": "2b63529f-5240-42d2-946d-db6037d4d4b6",
-              "parentUUID": "594546b2-2050-4ceb-b677-1508c215d470",
+              "uuid": "6b0eff65-d6f8-4920-85ed-a20c5f9f7480",
+              "parentUUID": "4781ef7f-3a70-4b9b-acd6-eb49a6bfe937",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2b63529f-5240-42d2-946d-db6037d4d4b6"
+            "6b0eff65-d6f8-4920-85ed-a20c5f9f7480"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1278,
+          "duration": 1323,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
