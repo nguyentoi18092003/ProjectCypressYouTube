@@ -9,7 +9,7 @@ describe('Footer Component Test', function(){
 
     it ('Test for brand logo', function(){
         let expectedDataUs={}
-        
+
         cy.fixture('getAboutUsdata').then((data)=>{
             expectedDataUs=data;
         })

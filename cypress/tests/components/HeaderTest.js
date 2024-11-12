@@ -23,6 +23,8 @@ describe('Header Component Test', function () {
         headerComp.getMenuDetails().then(actualMenuDetail => {
             cy.wrap('').then(() => {
                 expect(actualMenuDetail).to.be.deep.eq(expectedMenuDetails)
+                cy.log(JSON.stringify(actualMenuDetail))
+                cy.log(JSON.stringify(expectedMenuDetails))
             })
         })
     })
