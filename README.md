@@ -1,19 +1,19 @@
 **Để cấu hình report:**
-1. Bước 1: Tải thư viện 
+1.  **Tải thư viện** 
 +) marge, mochawesome , mochawesome-merge , rimraf (xóa report)
-2. Bước 2: Vào file package.json thêm vào script
-    "test:mocha-reporter": "cypress run --reporter mochawesome --reporter-options reportDir=results,overwrite=false,html=false,json=true",
+2.  Vào file **package.json** thêm vào **script**
+    **"test:mocha-reporter": "cypress run --reporter mochawesome --reporter-options reportDir=results,overwrite=false,html=false,json=true",
     "merge-report": "mochawesome-merge results/*.json > mochawesome.json",
     "build-report": "marge mochawesome.json",
     "clean-reports": "rimraf results mochawesome.json",
-    "test:full-report": "npm run clean-reports && npm run test:mocha-reporter && npm run merge-report && npm run build-report"
-3. Bước 3: Vào file cypress.config.js
-    screenshotOnRunFailure: true,
-    screenshotsFolder: "./screenshots"
+    "test:full-report": "npm run clean-reports && npm run test:mocha-reporter && npm run merge-report && npm run build-report"**
+3.  Vào file **cypress.config.js**
+    **screenshotOnRunFailure: true,
+    screenshotsFolder: "./screenshots"**
 
 4. Bước 4: Thêm vào gitignore
-    results/
+    **results/
     mochawesome-report/
-    screenshots/
+    screenshots/**
 
-=> Run sử dụng câu lệnh:  npm run test:full-report
+=> Run sử dụng câu lệnh:  **npm run test:full-report**
