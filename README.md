@@ -1,6 +1,6 @@
 **Để cấu hình report:**
 1.  **Tải thư viện** 
-+) marge, mochawesome , mochawesome-merge , rimraf (xóa report)
++) **marge, mochawesome , mochawesome-merge , rimraf (xóa report)**
 2.  Vào file **package.json** thêm vào **script**
     **"test:mocha-reporter": "cypress run --reporter mochawesome --reporter-options reportDir=results,overwrite=false,html=false,json=true",
     "merge-report": "mochawesome-merge results/*.json > mochawesome.json",
